@@ -16,7 +16,7 @@ body{
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    background-color: #888989;
+    background-color: #2D2A37
 }
 .display{
     height:70px;
@@ -27,8 +27,10 @@ body{
     margin-bottom:5px;
     background-color: #cfd8c0;
     font-size: 40px;
-    text-align: right;
-    
+    padding:0px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 .buttons{
     display:grid;
@@ -39,13 +41,22 @@ body{
     font-size: 3rem;
     
 }
-.button:hover{
-    color:white;
-}
-.num,.operator{
+.num, .operator{
     width:65px;
     height:65px;
     border-radius:50%;
     margin:auto;
-    
+    font-size: 19px;
+    color:#ffffff;
+    border:1px solid #5b5252;
+    border-style:groove;
+}
+.num{
+    background-color: #302D39
+}
+.operator{
+    background-color: #4C2F7B
+}
+.num:hover, .operator:hover{
+background-color:black;
 }
